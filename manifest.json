@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "HN WIH: Search by Tags",
+  "description": "Search the Hacker News \"Who is Hiring?\" thread by tags",
+  "version": "1.0",
+
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+
+  // https://stackoverflow.com/a/30289669/6776673
+  "content_scripts": [{
+    "matches": ["*://news.ycombinator.com/*"],
+    "js": ["content.js"]
+  }],
+
+  "page_action": {
+    "default_title": "HN WIH: Search by Tags",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": ["storage"]
+}

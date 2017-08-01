@@ -1,0 +1,82 @@
+html {
+  padding-bottom: 2.5em;
+}
+body {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #fefefe;
+  min-width: 325px;
+  background-color: #e4e4ff;
+  padding: 1em;
+}
+input {
+  background-color: #e4e4ff;
+  outline: none;
+  border: 0;
+  margin-left: .5em;
+  width: 90%;
+  color: #5959b9;
+  font-weight: bold;
+}
+input::placeholder {
+  color: #5959b9;
+  font-weight: bold;
+}
+div.input {
+  border: 1px solid #5959b9;
+  padding: .5em 0;
+  border-radius: 2px;
+}
+.tags {
+  float: left;
+  margin-top: 1em;
+  padding-bottom: 1em;
+}
+.tag {
+  cursor: pointer;
+  background-color: #5959b9;
+  border: .09em solid #5959b9;
+  padding: .4em .8em;
+  border-radius: .2em;
+  font-size: .8em;
+  float: left;
+  margin: .25em 0;
+  margin-right: .25em;
+}
+.tag:hover {
+  transition: background-color 0.3s;
+  background-color: #e4e4ff;
+  color: #5959b9
+}
+.tag:hover svg {
+  fill: #5959b9
+}
+ svg {
+  width: 1.25em;
+  fill: #e4e4ff;
+  margin-left: 0.3em;
+  vertical-align: sub;
+}
+.tag-icon {
+  fill: #5959b9;
+  display: inline;
+}
+button {
+  position: absolute;
+  bottom: 1em;
+  right: 1.8em;  
+}
+button.results {
+  background-color: #59b959;
+  color: white;
+  border: 1px solid #59b959;
+  border-radius: 2px;
+  padding: .6em 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+button.results:hover {
+  transition: background-color 0.3s;
+  background-color: #4bb34b;
+  border-color: #67bf67;
+}
