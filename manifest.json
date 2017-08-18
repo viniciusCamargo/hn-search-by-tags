@@ -5,6 +5,12 @@
   "description": "Search the Hacker News \"Who is Hiring?\" thread by tags",
   "version": "1.0",
 
+  "icons": { 
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+
   "background": {
     "persistent": false,
     "scripts": ["background.js"]
